@@ -51,7 +51,7 @@ int main(){
     pibPercapta1 = pib1 / populacao1;
 
     //calculando o super poder da carta 1
-    superPoder1 = populacao1 + area1 + pib1 + num_pontosTuristicos1 + densiPopulacional1 + pibPercapta1 + (densiPopulacional1 < densiPopulacional2);
+    superPoder1 = populacao1 + area1 + pib1 + num_pontosTuristicos1 + densiPopulacional1 + pibPercapta1 + (1 / densiPopulacional2);
     
 
 
@@ -95,7 +95,7 @@ int main(){
     pibPercapta2 = pib2 / populacao2;
 
     //calculando o super poder da carta 2
-    superPoder2 = populacao2 + area2 + pib2 + num_pontosTuristicos2 + densiPopulacional2 + pibPercapta2 + (densiPopulacional2 < densiPopulacional2);
+    superPoder2 = populacao2 + area2 + pib2 + num_pontosTuristicos2 + densiPopulacional2 + pibPercapta2 + ( 1 / densiPopulacional2); 
  
     //definindo a carta ganhadora por meio da comparação
     resultado = superPoder1 > superPoder2;
@@ -128,7 +128,6 @@ int main(){
     printf("Densidade Populacional: %.2fhab/km2\n", densiPopulacional2);
     printf("PIB per Capita: %.2f reais\n");
     printf("Super Poder: %.1f", resultado);
-
-    return 0;
+        return 0;
 
 }
